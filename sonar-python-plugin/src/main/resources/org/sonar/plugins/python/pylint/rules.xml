@@ -476,7 +476,7 @@
     <priority>MAJOR</priority>
   </rule>
   <rule>
-    <key>E9900</key>
+    <key>E1300</key>
     <name><![CDATA[Unsupported format character]]></name>
     <configKey>E1300</configKey>
     <description>
