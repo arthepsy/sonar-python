@@ -591,7 +591,7 @@
     <name><![CDATA[Unable to check methods signature]]></name>
     <configKey>F0202</configKey>
     <description>
-      <![CDATA[Used when PyLint has been unable to check methods signature compatibility for an unexpected reason. Please report this kind if you don't make sense of it.]]>
+      <![CDATA[Used when Pylint has been unable to check methods signature compatibility for an unexpected reason. Please report this kind if you don't make sense of it.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -600,7 +600,7 @@
     <name><![CDATA[Failed to resolve interfaces]]></name>
     <configKey>F0220</configKey>
     <description>
-      <![CDATA[Used when a PyLint as failed to find interfaces implemented by a class]]>
+      <![CDATA[Used when a Pylint as failed to find interfaces implemented by a class]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -1153,7 +1153,7 @@
     <name><![CDATA[Using the global statement]]></name>
     <configKey>W0603</configKey>
     <description>
-      <![CDATA[Used when you use the "global" statement to update a global variable. PyLint just tries to discourage this usage. That doesn't mean you can not use it!]]>
+      <![CDATA[Used when you use the "global" statement to update a global variable. Pylint just tries to discourage this usage. That doesn't mean you can not use it!]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1279,7 +1279,7 @@
     <name><![CDATA[Use of "property" on an old style class]]></name>
     <configKey>W1001</configKey>
     <description>
-      <![CDATA[Used when PyLint detects the use of the builtin "property" on an old style class while this is relying on new style classes features]]>
+      <![CDATA[Used when Pylint detects the use of the builtin "property" on an old style class while this is relying on new style classes features]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1424,7 +1424,7 @@
       <![CDATA[
         <p>Used when a wrong number of spaces is used around an operator, bracket, or comma, or before a block opener colon.</p>
         <p>This message belongs to the format checker.</p>
-        <p>In PyLint 1.1.0, this message replaced the older whitespace-related messages 
+        <p>In Pylint 1.1.0, this message replaced the older whitespace-related messages 
         {rule:Pylint:C0322}, {rule:Pylint:C0323}, and {rule:Pylint:C0324}, and now reports some additional situations.</p>]]>
     </description>
     <priority>MINOR</priority>
