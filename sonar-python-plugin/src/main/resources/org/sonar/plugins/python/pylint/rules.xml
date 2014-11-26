@@ -527,7 +527,7 @@
     <name><![CDATA[Too many arguments for format string]]></name>
     <configKey>E1305</configKey>
     <description>
-      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too few arguments.]]>
+      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too many arguments.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -536,7 +536,7 @@
     <name><![CDATA[Not enough arguments for format string]]></name>
     <configKey>E1306</configKey>
     <description>
-      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too many arguments]]>
+      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too few arguments]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
