@@ -347,7 +347,7 @@
     <name><![CDATA[Raising only allowed for classes, instances or strings]]></name>
     <configKey>E0702</configKey>
     <description>
-      <![CDATA[Used when something which is neither a class, an instance or a string is raised (i.e. a 'TypeError' will be raised).]]>
+      <![CDATA[Used when something which is neither a class, an instance or a string is raised (i.e. a `TypeError` will be raised).]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -856,7 +856,7 @@
     <name><![CDATA[Unnecessary pass statement]]></name>
     <configKey>W0107</configKey>
     <description>
-      <![CDATA[Used when a "pass" statement that can be avoided is encountered.)]]>
+      <![CDATA[Used when a "pass" statement that can be avoided is encountered.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1012,7 +1012,7 @@
     <name><![CDATA[Unnecessary semicolon]]></name>
     <configKey>W0301</configKey>
     <description>
-      <![CDATA[Used when a statement is ended by a semi-colon (";"), which isn't necessary(that's python, not C ;).]]>
+      <![CDATA[Used when a statement is ended by a semi-colon (";"), which isn't necessary (that's python, not C ;).]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1048,7 +1048,7 @@
   </rule>
   <rule>
     <key>W0332</key>
-    <name><![CDATA[Use l as long integer identifier]]></name>
+    <name><![CDATA[Use "l" as long integer identifier]]></name>
     <configKey>W0332</configKey>
     <description>
       <![CDATA[Used when a lower case "l" is used to mark a long integer. You should use an upper case "L" since the letter "l" looks too much like the digit "1"]]>
@@ -1198,7 +1198,7 @@
     <name><![CDATA[Unused import from wildcard import]]></name>
     <configKey>W0614</configKey>
     <description>
-      <![CDATA[Used when an imported module or variable is not used from a 'from X import *'style import.]]>
+      <![CDATA[Used when an imported module or variable is not used from a 'from X import *' style import.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1321,7 +1321,7 @@
     <name><![CDATA[Unused key in format string dictionary]]></name>
     <configKey>W1301</configKey>
     <description>
-      <![CDATA[Used when a format string that uses named conversion specifiers is used with adictionary that contains keys not required by the format string.]]>
+      <![CDATA[Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
