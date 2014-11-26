@@ -50,7 +50,7 @@
     <name><![CDATA[Class method should have "cls" as first argument]]></name>
     <configKey>C0202</configKey>
     <description>
-      <![CDATA[Used when a class method has an attribute different than "cls" as first argument, to easily differentiate them from regular instance methods.]]>
+      <![CDATA[Used when a class method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to "cls"), recommended to easily differentiate them from regular instance methods.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -59,7 +59,7 @@
     <name><![CDATA[Metaclass method should have "mcs" as first argument]]></name>
     <configKey>C0203</configKey>
     <description>
-      <![CDATA[Used when a metaclass method has an attribute different the "mcs" as first argument.]]>
+      <![CDATA[Used when a metaclass method has a first agument named differently than the value specified in valid-classmethod-first-arg option (default to "cls"), recommended to easily differentiate them from regular instance methods.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -228,7 +228,7 @@
     <name><![CDATA[Method hidden by attribute of super class]]></name>
     <configKey>E0202</configKey>
     <description>
-      <![CDATA[Used when a class defines a method which is hidden by an instance attribute from an ancestor class.]]>
+      <![CDATA[Used when a class defines a method which is hidden by an instance attribute from an ancestor class or set by some client code.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -552,7 +552,7 @@
     <name><![CDATA[Internal pylint error]]></name>
     <configKey>F0002</configKey>
     <description>
-      <![CDATA[Used when an unexpected error occurred while building the ASTNG representation. This is usually accompanied by a traceback. Please report such errors!]]>
+      <![CDATA[Used when an unexpected error occurred while building the Astroid representation. This is usually accompanied by a traceback. Please report such errors!]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -579,7 +579,7 @@
     <name><![CDATA[Error while code parsing]]></name>
     <configKey>F0010</configKey>
     <description>
-      <![CDATA[Used when an exception occurred while building the ASTNG representation which could be handled by ASTNG.]]>
+      <![CDATA[Used when an exception occurred while building the Astroid representation which could be handled by astroid.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -696,7 +696,7 @@
     <name><![CDATA[Too many ancestors]]></name>
     <configKey>R0901</configKey>
     <description>
-      <![CDATA[Used when class has too many parent classes, try to reduce this to get a more simple (and so easier to use) class.]]>
+      <![CDATA[Used when class has too many parent classes, try to reduce this to get a simpler (and so easier to use) class.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -705,7 +705,7 @@
     <name><![CDATA[Too many instance attributes]]></name>
     <configKey>R0902</configKey>
     <description>
-      <![CDATA[Used when class has too many instance attributes, try to reduce this to get a more simple (and so easier to use) class.]]>
+      <![CDATA[Used when class has too many instance attributes, try to reduce this to get a simpler (and so easier to use) class.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -723,7 +723,7 @@
     <name><![CDATA[Too many public methods]]></name>
     <configKey>R0904</configKey>
     <description>
-      <![CDATA[Used when class has too many public methods, try to reduce this to get a more simple (and so easier to use) class.]]>
+      <![CDATA[Used when class has too many public methods, try to reduce this to get a simpler (and so easier to use) class.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -936,7 +936,7 @@
     <name><![CDATA[Static method with "self" or "cls" as first argument]]></name>
     <configKey>W0211</configKey>
     <description>
-      <![CDATA[Used when a static method has "self" or "cls" as first argument.]]>
+      <![CDATA[Used when a static method has "self" or a value specified in valid-classmethod-first-arg option or valid-metaclass-classmethod-first-arg option as first argument.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1044,7 +1044,7 @@
   </rule>
   <rule>
     <key>W0332</key>
-    <name><![CDATA[Use "l" as long integer identifier]]></name>
+    <name><![CDATA[Use of "l" as long integer identifier]]></name>
     <configKey>W0332</configKey>
     <description>
       <![CDATA[Used when a lower case "l" is used to mark a long integer. You should use an upper case "L" since the letter "l" looks too much like the digit "1"]]>
@@ -1374,7 +1374,7 @@
     <name><![CDATA[Metaclass class method first argument]]></name>
     <configKey>C0204</configKey>
     <description>
-      <![CDATA[Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (defaultto "mcs"), recommended to easily differentiate them from regular instancemethods.]]>
+      <![CDATA[Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to "mcs"), recommended to easily differentiate them from regular instance methods.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1466,7 +1466,7 @@
     <name><![CDATA[The first reversed() argument is not a sequence]]></name>
     <configKey>E0111</configKey>
     <description>
-      <![CDATA[Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__
+      <![CDATA[Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__.
       <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
