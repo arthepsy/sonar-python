@@ -68,8 +68,8 @@
     <name><![CDATA[Line too long]]></name>
     <configKey>C0301</configKey>
     <description>
-      <![CDATA[Used when a line is longer than a given number of characters.
-      <p>This rule is deprecated, use {rule:python:LineLength} instead.</p>]]>
+      <![CDATA[<p>Used when a line is longer than a given number of characters.</p>
+               <p>This rule is deprecated, use {rule:python:LineLength} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -88,8 +88,8 @@
     <name><![CDATA[More than one statement on a single line]]></name>
     <configKey>C0321</configKey>
     <description>
-      <![CDATA[<p>Used when more than one statement are found on the same line.</p> 
-      <p>This rule is deprecated, use {rule:python:OneStatementPerLine} instead.</p>]]>
+      <![CDATA[<p>Used when more than one statement are found on the same line.</p>
+               <p>This rule is deprecated, use {rule:python:OneStatementPerLine} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -99,27 +99,33 @@
     <name><![CDATA[Operator not preceded by a space]]></name>
     <configKey>C0322</configKey>
     <description>
-      <![CDATA[Used when one of the following operator (!= | <= | == | >= | < | > | = | \+= |-= | \*= | /= | %) is not preceded by a space.]]>
+      <![CDATA[<p>Used when one of the following operator (!= | <= | == | >= | < | > | = | \+= |-= | \*= | /= | %) is not preceded by a space.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:C0326} in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>C0323</key>
     <name><![CDATA[Operator not followed by a space]]></name>
     <configKey>C0323</configKey>
     <description>
-      <![CDATA[Used when one of the following operator (!= | <= | == | >= | < | > | = | \+= |-= | \*= | /= | %) is not followed by a space.]]>
+      <![CDATA[<p>Used when one of the following operator (!= | <= | == | >= | < | > | = | \+= |-= | \*= | /= | %) is not followed by a space.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:C0326} in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>C0324</key>
     <name><![CDATA[Comma not followed by a space]]></name>
     <configKey>C0324</configKey>
     <description>
-      <![CDATA[Used when a comma (",") is not followed by a space.]]>
+      <![CDATA[<p>Used when a comma (",") is not followed by a space.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:C0326} in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E0001</key>
@@ -207,7 +213,8 @@
     <name><![CDATA[Return with argument inside generator]]></name>
     <configKey>E0106</configKey>
     <description>
-      <![CDATA[Used when a "return" statement with an argument is found outside in a generator function or method (e.g. with some "yield" statements).]]>
+      <![CDATA[<p>Used when a "return" statement with an argument is found outside in a generator function or method (e.g. with some "yield" statements).</p>
+               <p>This message can't be emitted when using Python >= 3.3.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -216,9 +223,8 @@
     <name><![CDATA[Use of a non-existent operator]]></name>
     <configKey>E0107</configKey>
     <description>
-      <![CDATA[Used when you attempt to use the C-style pre-increment or pre-decrement operator -- and ++, which doesn't exist in Python.
-               <p>This rule is deprecated, use {rule:python:PreIncrementDecrement} instead.</p>
-      ]]>
+      <![CDATA[<p>Used when you attempt to use the C-style pre-increment orpre-decrement operator -- and ++, which doesn't exist in Python.</p>
+               <p>This rule is deprecated, use {rule:python:PreIncrementDecrement} instead.</p>]]>
     </description>
     <priority>MAJOR</priority>
     <status>DEPRECATED</status>
@@ -273,7 +279,7 @@
     <name><![CDATA[Missing method from interface]]></name>
     <configKey>E0222</configKey>
     <description>
-      <![CDATA[Used when a method declared in an interface is missing from a class implementing this interface]]>
+      <![CDATA[Used when a method declared in an interface is missing from a class implementing this interface.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -282,27 +288,33 @@
     <name><![CDATA[Non ascii characters found but no encoding specified (PEP 263)]]></name>
     <configKey>E0501</configKey>
     <description>
-      <![CDATA[Used when some non ascii characters are detected but no encoding is specified, as stated in the PEP 263.]]>
+      <![CDATA[<p>Used when some non ascii characters are detected but no encoding is specified, as stated in the PEP 263.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:E0001} in Pylint 0.23.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E0502</key>
     <name><![CDATA[Wrong encoding specified]]></name>
     <configKey>E0502</configKey>
     <description>
-      <![CDATA[Used when a known encoding is specified but the file doesn't seem to be actually in this encoding.]]>
+      <![CDATA[<p>Used when a known encoding is specified but the file doesn't seem to be actually in this encoding.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:E0001} in Pylint 0.23.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E0503</key>
     <name><![CDATA[Unknown encoding specified]]></name>
     <configKey>E0503</configKey>
     <description>
-      <![CDATA[Used when an encoding is specified, but it's unknown to Python.]]>
+      <![CDATA[<p>Used when an encoding is specified, but it's unknown to Python.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:E0001} in Pylint 0.22.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E0601</key>
@@ -354,7 +366,8 @@
     <name><![CDATA[Raising a new style class which doesn't inherit from BaseException]]></name>
     <configKey>E0710</configKey>
     <description>
-      <![CDATA[Used when a new style class which doesn't inherit from BaseException is raised.]]>
+      <![CDATA[<p>Used when a new style class which doesn't inherit from BaseException is raised.</p>
+               <p>This rule was added in Pylint 0.15.2.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -363,7 +376,8 @@
     <name><![CDATA[NotImplemented raised - should raise NotImplementedError]]></name>
     <configKey>E0711</configKey>
     <description>
-      <![CDATA[Used when NotImplemented is raised instead of NotImplementedError]]>
+      <![CDATA[<p>Used when NotImplemented is raised instead of NotImplementedError.</p>
+               <p>This rule was added in Pylint 0.20.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -372,7 +386,8 @@
     <name><![CDATA[Use of __slots__ on an old style class]]></name>
     <configKey>E1001</configKey>
     <description>
-      <![CDATA[Used when an old style class uses the __slots__ attribute.]]>
+      <![CDATA[<p>Used when an old style class uses the __slots__ attribute.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -381,7 +396,8 @@
     <name><![CDATA[Use of super on an old style class]]></name>
     <configKey>E1002</configKey>
     <description>
-      <![CDATA[Used when an old style class uses the super builtin.]]>
+      <![CDATA[<p>Used when an old style class uses the super builtin.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -408,7 +424,7 @@
     <name><![CDATA[Calling of not callable]]></name>
     <configKey>E1102</configKey>
     <description>
-      <![CDATA[Used when an object being called has been inferred to a non callable object]]>
+      <![CDATA[Used when an object being called has been inferred to a non callable object.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -417,9 +433,11 @@
     <name><![CDATA[Accessing nonexistent member (type information incomplete)]]></name>
     <configKey>E1103</configKey>
     <description>
-      <![CDATA[Used when a variable is accessed for an nonexistent member, but Pylint was not able to interpret all possible types of this variable.]]>
+      <![CDATA[<p>Used when a variable is accessed for an nonexistent member, but Pylint was not able to interpret all possible types of this variable.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:E1101} in Pylint 1.4.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E1111</key>
@@ -435,7 +453,8 @@
     <name><![CDATA[Too few arguments]]></name>
     <configKey>E1120</configKey>
     <description>
-      <![CDATA[Used when a function call passes too few arguments.]]>
+      <![CDATA[<p>Used when a function call passes too few arguments.</p>
+               <p>This rule was added in Pylint 0.19.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -444,7 +463,8 @@
     <name><![CDATA[Too many positional arguments for function call]]></name>
     <configKey>E1121</configKey>
     <description>
-      <![CDATA[Used when a function call passes too many positional arguments.]]>
+      <![CDATA[<p>Used when a function call passes too many positional arguments.</p>
+               <p>This rule was added in Pylint 0.19.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -453,16 +473,19 @@
     <name><![CDATA[Duplicate keyword argument in function call]]></name>
     <configKey>E1122</configKey>
     <description>
-      <![CDATA[Used when a function call passes the same keyword argument multiple times.]]>
+      <![CDATA[<p>Used when a function call passes the same keyword argument multiple times.</p>
+               <p>This rule is deprecated. It was added in Pylint 0.19.0 and removed in Pylint 1.4.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>E1123</key>
     <name><![CDATA[Passing unexpected keyword argument in function call]]></name>
     <configKey>E1123</configKey>
     <description>
-      <![CDATA[Used when a function call passes a keyword argument that doesn't correspond to one of the function's parameter names.]]>
+      <![CDATA[<p>Used when a function call passes a keyword argument that doesn't correspond to one of the function's parameter names.</p>
+               <p>This rule was added in Pylint 0.19.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -471,7 +494,8 @@
     <name><![CDATA[Multiple values passed for parameter in function call]]></name>
     <configKey>E1124</configKey>
     <description>
-      <![CDATA[Used when a function call would result in assigning multiple values to a function parameter, one value from a positional argument and one from a keyword argument.]]>
+      <![CDATA[<p>Used when a function call would result in assigning multiple values to a function parameter, one value from a positional argument and one from a keyword argument.</p>
+               <p>This rule was added in Pylint 0.19.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -480,7 +504,8 @@
     <name><![CDATA[Unsupported format character]]></name>
     <configKey>E1300</configKey>
     <description>
-      <![CDATA[Used when a unsupported format character is used in a format string.]]>
+      <![CDATA[<p>Used when a unsupported format character is used in a format string.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -489,7 +514,8 @@
     <name><![CDATA[Format string ends in middle of conversion specifier]]></name>
     <configKey>E1301</configKey>
     <description>
-      <![CDATA[Used when a format string terminates before the end of a conversion specifier.]]>
+      <![CDATA[<p>Used when a format string terminates before the end of a conversion specifier.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -498,7 +524,8 @@
     <name><![CDATA[Mixing named and unnamed conversion specifiers in format string]]></name>
     <configKey>E1302</configKey>
     <description>
-      <![CDATA[Used when a format string contains both named (e.g. '%(foo)d') and unnamed (e.g. '%d') conversion specifiers. This is also used when a named conversion specifier contains * for the minimum field width and/or precision.]]>
+      <![CDATA[<p>Used when a format string contains both named (e.g. '%(foo)d') and unnamed (e.g. '%d') conversion specifiers. This is also used when a named conversion specifier contains * for the minimum field width and/or precision.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -507,7 +534,8 @@
     <name><![CDATA[Expected mapping for format string]]></name>
     <configKey>E1303</configKey>
     <description>
-      <![CDATA[Used when a format string that uses named conversion specifiers is used with an argument that is not a mapping.]]>
+      <![CDATA[<p>Used when a format string that uses named conversion specifiers is used with an argument that is not a mapping.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -516,7 +544,8 @@
     <name><![CDATA[Missing key in format string dictionary]]></name>
     <configKey>E1304</configKey>
     <description>
-      <![CDATA[Used when a format string that uses named conversion specifiers is used with a dictionary that doesn't contain all the keys required by the format string.]]>
+      <![CDATA[<p>Used when a format string that uses named conversion specifiers is used with a dictionary that doesn't contain all the keys required by the format string.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -525,7 +554,8 @@
     <name><![CDATA[Too many arguments for format string]]></name>
     <configKey>E1305</configKey>
     <description>
-      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too many arguments.]]>
+      <![CDATA[<p>Used when a format string that uses unnamed conversion specifiers is given too many arguments.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -534,7 +564,8 @@
     <name><![CDATA[Not enough arguments for format string]]></name>
     <configKey>E1306</configKey>
     <description>
-      <![CDATA[Used when a format string that uses unnamed conversion specifiers is given too few arguments]]>
+      <![CDATA[<p>Used when a format string that uses unnamed conversion specifiers is given too few arguments.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -570,16 +601,19 @@
     <name><![CDATA[Unexpected inferred value]]></name>
     <configKey>F0004</configKey>
     <description>
-      <![CDATA[Used to indicate that some value of an unexpected type has been inferred.]]>
+      <![CDATA[<p>Used to indicate that some value of an unexpected type has been inferred.</p>
+               <p>This rule is deprecated. It was removed in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>F0010</key>
     <name><![CDATA[Error while code parsing]]></name>
     <configKey>F0010</configKey>
     <description>
-      <![CDATA[Used when an exception occurred while building the Astroid representation which could be handled by astroid.]]>
+      <![CDATA[<p>Used when an exception occurred while building the Astroid representation which could be handled by astroid.</p>
+               <p>This rule was added in Pylint 0.23.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -597,7 +631,7 @@
     <name><![CDATA[Failed to resolve interfaces]]></name>
     <configKey>F0220</configKey>
     <description>
-      <![CDATA[Used when a Pylint as failed to find interfaces implemented by a class]]>
+      <![CDATA[Used when a Pylint as failed to find interfaces implemented by a class.]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -606,9 +640,11 @@
     <name><![CDATA[Format detection error]]></name>
     <configKey>F0321</configKey>
     <description>
-      <![CDATA[Used when an unexpected error occurred in bad format detection. Please report the error if it occurs.]]>
+      <![CDATA[<p>Used when an unexpected error occurred in bad format detection. Please report the error if it occurs.</p>
+               <p>This rule is deprecated. It was removed in Pylint 0.23.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>F0401</key>
@@ -660,7 +696,7 @@
     <name><![CDATA[Ignoring entire file]]></name>
     <configKey>I0013</configKey>
     <description>
-      <![CDATA[Used to inform that the file will not be checked]]>
+      <![CDATA[Used to inform that the file will not be checked.]]>
     </description>
     <priority>INFO</priority>
   </rule>
@@ -741,9 +777,8 @@
     <name><![CDATA[Too many branches]]></name>
     <configKey>R0912</configKey>
     <description>
-      <![CDATA[Used when a function or method has too many branches, making it hard to follow.
-               <p>This rule is deprecated, use {rule:python:FunctionComplexity} instead.</p>
-      ]]>
+      <![CDATA[<p>Used when a function or method has too many branches, making it hard to follow.</p>
+               <p>This rule is deprecated, use {rule:python:FunctionComplexity} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -861,7 +896,8 @@
     <name><![CDATA[Lambda may not be necessary]]></name>
     <configKey>W0108</configKey>
     <description>
-      <![CDATA[Used when the body of a lambda expression is a function call on the same argument list as the lambda itself; such lambda expressions are in all but a few cases replaceable with the function being called in the body of the lambda.]]>
+      <![CDATA[<p>Used when the body of a lambda expression is a function call on the same argument list as the lambda itself; such lambda expressions are in all but a few cases replaceable with the function being called in the body of the lambda.</p>
+               <p>This rule was added in Pylint 0.17.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -870,7 +906,8 @@
     <name><![CDATA[Duplicate key in dictionary]]></name>
     <configKey>W0109</configKey>
     <description>
-      <![CDATA[Used when a dictionary expression binds the same key multiple times.]]>
+      <![CDATA[<p>Used when a dictionary expression binds the same key multiple times.</p>
+               <p>This rule was added in Pylint 0.19.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -879,9 +916,8 @@
     <name><![CDATA[Use of the exec statement]]></name>
     <configKey>W0122</configKey>
     <description>
-      <![CDATA[Used when you use the "exec" statement, to discourage its usage. That doesn't mean you can not use it!
-               <p>This rule is deprecated, use {rule:python:ExecStatementUsage} instead.</p>
-      ]]>
+      <![CDATA[<p>Used when you use the "exec" statement, to discourage its usage. That doesn't mean you can not use it!</p>
+               <p>This rule is deprecated, use {rule:python:ExecStatementUsage} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -909,7 +945,8 @@
     <name><![CDATA[Statement in finally block may swallow exception]]></name>
     <configKey>W0150</configKey>
     <description>
-      <![CDATA[Used when a break or a return statement is found inside the finally clause of a try...finally block: the exceptions raised in the try clause will be silently swallowed instead of being re-raised.]]>
+      <![CDATA[<p>Used when a break or a return statement is found inside the finally clause of a try...finally block: the exceptions raised in the try clause will be silently swallowed instead of being re-raised.</p>
+               <p>This rule was added in Pylint 0.20.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -918,7 +955,8 @@
     <name><![CDATA[Assert called on a 2-uple]]></name>
     <configKey>W0199</configKey>
     <description>
-      <![CDATA[A call of assert on a tuple will always evaluate to true if the tuple is not empty, and will always evaluate to false if it is. Did you mean 'assert x,y'?]]>
+      <![CDATA[<p>A call of assert on a tuple will always evaluate to true if the tuple is not empty, and will always evaluate to false if it is. Did you mean 'assert x,y'?</p>
+               <p>This rule was added in Pylint 0.20.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1008,7 +1046,8 @@
     <name><![CDATA[Unnecessary semicolon]]></name>
     <configKey>W0301</configKey>
     <description>
-      <![CDATA[Used when a statement is ended by a semi-colon (";"), which isn't necessary (that's python, not C ;).]]>
+      <![CDATA[<p>Used when a statement is ended by a semi-colon (";"), which isn't necessary (that's python, not C ;).</p>
+               <p>This rule was added in Pylint 0.17.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1035,9 +1074,8 @@
     <name><![CDATA[Use of the <> operator]]></name>
     <configKey>W0331</configKey>
     <description>
-      <![CDATA[Used when the deprecated "<>" operator is used instead of "!=".
-               <p>This rule is deprecated, use {rule:python:InequalityUsage} instead.</p>
-      ]]>
+      <![CDATA[<p>Used when the deprecated "<>" operator is used instead of "!=".</p>
+               <p>This rule is deprecated, use {rule:python:InequalityUsage} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -1047,7 +1085,8 @@
     <name><![CDATA[Use of "l" as long integer identifier]]></name>
     <configKey>W0332</configKey>
     <description>
-      <![CDATA[Used when a lower case "l" is used to mark a long integer. You should use an upper case "L" since the letter "l" looks too much like the digit "1"]]>
+      <![CDATA[<p>Used when a lower case "l" is used to mark a long integer. You should use a upper case "L" since the letter "l" looks too much like the digit "1".</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1056,9 +1095,8 @@
     <name><![CDATA[Use of the `` operator]]></name>
     <configKey>W0333</configKey>
     <description>
-      <![CDATA[Used when the deprecated "``" (backtick) operator is used instead of the str() function.
-               <p>This rule is deprecated, use {rule:python:BackticksUsage} instead.</p>
-      ]]>
+      <![CDATA[<p>Used when the deprecated "``" (backtick) operator is used instead of the str() function.</p>
+               <p>This rule is deprecated, use {rule:python:BackticksUsage} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -1086,7 +1124,8 @@
     <name><![CDATA[Relative import]]></name>
     <configKey>W0403</configKey>
     <description>
-      <![CDATA[Used when an import relative to the package directory is detected.]]>
+      <![CDATA[<p>Used when an import relative to the package directory is detected.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1113,7 +1152,8 @@
     <name><![CDATA[__future__ import is not the first non docstring statement]]></name>
     <configKey>W0410</configKey>
     <description>
-      <![CDATA[Python 2.5 and greater require __future__ import to be the first non docstring statement in the module.]]>
+      <![CDATA[<p>Python 2.5 and greater require __future__ import to be the first non docstring statement in the module.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1158,7 +1198,7 @@
     <name><![CDATA[Using the global statement at the module level]]></name>
     <configKey>W0604</configKey>
     <description>
-      <![CDATA[Used when you use the "global" statement at the module level since it has no effect]]>
+      <![CDATA[Used when you use the "global" statement at the module level since it has no effect.]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1230,9 +1270,11 @@
     <name><![CDATA[Raising a string exception]]></name>
     <configKey>W0701</configKey>
     <description>
-      <![CDATA[Used when a string exception is raised.]]>
+      <![CDATA[<p>Used when a string exception is raised.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:W1625} in Pylint 1.4.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>W0702</key>
@@ -1266,7 +1308,9 @@
     <name><![CDATA[Exception doesn't inherit from standard "Exception" class]]></name>
     <configKey>W0710</configKey>
     <description>
-      <![CDATA[Used when a custom exception class is raised but doesn't inherit from the builtin "Exception" class.]]>
+      <![CDATA[<p>Used when a custom exception class is raised but doesn't inherit from the builtin "Exception" class.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule was added in Pylint 0.15.2.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1275,7 +1319,8 @@
     <name><![CDATA[Use of "property" on an old style class]]></name>
     <configKey>W1001</configKey>
     <description>
-      <![CDATA[Used when Pylint detects the use of the builtin "property" on an old style class while this is relying on new style classes features]]>
+      <![CDATA[<p>Used when Pylint detects the use of the builtin "property" on an old style class while this is relying on new style classes features.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1293,13 +1338,9 @@
     <name><![CDATA[Specify string format arguments as logging function parameters]]></name>
     <configKey>W1201</configKey>
     <description>
-      <![CDATA[Used when a logging statement has a call form of
-               "logging.<loggingmethod>(format_string % (format_args...))". Such
-               calls should leave string interpolation to the logging method itself
-               and be written "logging.<loggingmethod>(format_string,
-               format_args...)" so that the program may avoid incurring the cost of
-               the interpolation in those cases in which no message will be
-               logged. For more, see http://www.python.org/dev/peps/pep-0282/.]]>
+      <![CDATA[<p>Used when a logging statement has a call form of "logging.<logging method>(format_string % (format_args...))". Such calls should leave string interpolation to the logging method itself and be written "logging.<logging method>(format_string, format_args...)" so that the program may avoid incurring the cost of the interpolation in those cases in which no message will be logged.</p>
+               <p>For more, see http://www.python.org/dev/peps/pep-0282/</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1308,7 +1349,8 @@
     <name><![CDATA[Format string dictionary key should be a string]]></name>
     <configKey>W1300</configKey>
     <description>
-      <![CDATA[Used when a format string that uses named conversion specifiers is used with a dictionary whose keys are not all strings.]]>
+      <![CDATA[<p>Used when a format string that uses named conversion specifiers is used with a dictionary whose keys are not all strings.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1317,7 +1359,8 @@
     <name><![CDATA[Unused key in format string dictionary]]></name>
     <configKey>W1301</configKey>
     <description>
-      <![CDATA[Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string.]]>
+      <![CDATA[<p>Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1336,7 +1379,8 @@
     <name><![CDATA[Unsupported logging format character]]></name>
     <configKey>E1200</configKey>
     <description>
-      <![CDATA[Used when an unsupported format character is used in a logging statement format string.]]>
+      <![CDATA[<p>Used when an unsupported format character is used in a logging statement format string.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -1345,7 +1389,8 @@
     <name><![CDATA[Logging format string ends in middle of conversion specifier]]></name>
     <configKey>E1201</configKey>
     <description>
-      <![CDATA[Used when a logging statement format string terminates before the end of a conversion specifier.]]>
+      <![CDATA[<p>Used when a logging statement format string terminates before the end of a conversion specifier.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -1354,7 +1399,8 @@
     <name><![CDATA[Too many arguments for logging format string]]></name>
     <configKey>E1205</configKey>
     <description>
-      <![CDATA[Used when a logging format string is given too few arguments.]]>
+      <![CDATA[<p>Used when a logging format string is given too few arguments.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -1363,7 +1409,8 @@
     <name><![CDATA[Not enough arguments for logging format string]]></name>
     <configKey>E1206</configKey>
     <description>
-      <![CDATA[Used when a logging format string is given too many arguments]]>
+      <![CDATA[<p>Used when a logging format string is given too many arguments.</p>
+               <p>This rule was added in Pylint 0.24.0.</p>]]>
     </description>
     <priority>MAJOR</priority>
   </rule>
@@ -1374,7 +1421,8 @@
     <name><![CDATA[Metaclass class method first argument]]></name>
     <configKey>C0204</configKey>
     <description>
-      <![CDATA[Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to "mcs"), recommended to easily differentiate them from regular instance methods.]]>
+      <![CDATA[<p>Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to "mcs"), recommended to easily differentiate them from regular instance methods.</p>
+               <p>This rule was added in Pylint 0.26.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1384,7 +1432,7 @@
     <configKey>C0303</configKey>
     <description>
       <![CDATA[<p>Used when there is whitespace between the end of a line and the newline.</p>
-      <p>Added in Pylint 1.0.0.</p>]]>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1394,7 +1442,7 @@
     <configKey>C0304</configKey>
     <description>
       <![CDATA[<p>Used when the last line in a file is missing a newline.</p>
-      <p>Added in Pylint 1.0.0.</p>]]>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1403,21 +1451,18 @@
     <name><![CDATA[Unnecessary parentheses]]></name>
     <configKey>C0325</configKey>
     <description>
-      <![CDATA[<p>Used when a single item in parentheses follows an if, for, or other keyword.</p> 
-      <p>This rule was added in Pylint 1.1.0.</p>]]>
+      <![CDATA[<p>Used when a single item in parentheses follows an if, for, or other keyword.</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
   <rule>
     <key>C0326</key>
-    <name><![CDATA[Wrong number of spaces around an operator, bracket, or comma, or before a block opener colon]]></name>
+    <name><![CDATA[Wrong number of spaces]]></name>
     <configKey>C0326</configKey>
     <description>
-      <![CDATA[
-        <p>Used when a wrong number of spaces is used around an operator, bracket, or comma, or before a block opener colon.</p>
-        <p>This message belongs to the format checker.</p>
-        <p>In Pylint 1.1.0, this message replaced the older whitespace-related messages 
-        {rule:Pylint:C0322}, {rule:Pylint:C0323}, and {rule:Pylint:C0324}, and now reports some additional situations.</p>]]>
+      <![CDATA[<p>Used when a wrong number of spaces is used around an operator, bracket or block opener.</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1427,7 +1472,7 @@
     <configKey>C0330</configKey>
     <description>
       <![CDATA[<p>Used when continued lines are badly indented.</p>
-      <p>This rule was added in Pylint 1.2.1.</p>]]>
+               <p>This rule was added in Pylint 1.3.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1436,9 +1481,9 @@
     <name><![CDATA[Old-style class defined]]></name>
     <configKey>C1001</configKey>
     <description>
-      <![CDATA[<p>Used when a class is defined that does not inherit from another class and does not inherit explicitly from “object”. 
-      This message can’t be emitted when using Python >= 3.0.</p>
-      <p>This rule was added in Pylint 1.0.0.</p>]]>
+      <![CDATA[<p>Used when a class is defined that does not inherit from anotherclass and does not inherit explicitly from "object".</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1447,8 +1492,8 @@
     <name><![CDATA[Duplicate argument name in function definition]]></name>
     <configKey>E0108</configKey>
     <description>
-      <![CDATA[Duplicate argument names in function definitions are syntax errors. 
-        <p>This rule was added in Pylint 0.28.0.</p>]]>
+      <![CDATA[<p>Duplicate argument names in function definitions are syntax errors.</p>
+               <p>This rule was added in Pylint 0.28.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1457,7 +1502,8 @@
     <name><![CDATA[Missing argument to reversed()]]></name>
     <configKey>E0109</configKey>
     <description>
-      <![CDATA[Used when reversed() builtin didn't receive an argument.]]>
+      <![CDATA[<p>Used when reversed() builtin didn't receive an argument.</p>
+               <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1466,8 +1512,8 @@
     <name><![CDATA[The first reversed() argument is not a sequence]]></name>
     <configKey>E0111</configKey>
     <description>
-      <![CDATA[Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__.
-      <p>This rule was added in Pylint 1.2.0.</p>]]>
+      <![CDATA[<p>Used when the first argument to reversed() builtin isn't a sequence (does not implement __reversed__, nor __getitem__ and __len__.</p>
+               <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1476,8 +1522,8 @@
     <name><![CDATA[__exit__ must accept 3 arguments: type, value, traceback]]></name>
     <configKey>E0235</configKey>
     <description>
-      <![CDATA[Used when the __exit__ special method, belonging to a context manager, does not accept 3 arguments (type, value, traceback).
-        <p>This rule was added in Pylint 1.1.0.</p>]]>
+      <![CDATA[<p>Used when the __exit__ special method, belonging to a context manager, does not accept 3 arguments (type, value, traceback).</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1486,8 +1532,8 @@
     <name><![CDATA[Invalid object in __slots__, must contain only non empty strings]]></name>
     <configKey>E0236</configKey>
     <description>
-      <![CDATA[Used when an invalid (non-string) object occurs in __slots__.
-        <p>This rule was added in Pylint 1.2.0.</p>]]>
+      <![CDATA[<p>Used when an invalid (non-string) object occurs in __slots__.</p>
+               <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1496,8 +1542,8 @@
     <name><![CDATA[Invalid __slots__ object]]></name>
     <configKey>E0238</configKey>
     <description>
-      <![CDATA[Used when an invalid __slots__ is found in class. Only a string, an iterable or a sequence is permitted.
-        <p>This rule was added in Pylint 1.2.0.</p>]]>
+      <![CDATA[<p>Used when an invalid __slots__ is found in class. Only a string, an iterable or a sequence is permitted.</p>
+               <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1506,7 +1552,8 @@
     <name><![CDATA[Undefined variable name in __all__]]></name>
     <configKey>E0603</configKey>
     <description>
-      <![CDATA[Used when an undefined variable name is referenced in __all__.]]>
+      <![CDATA[<p>Used when an undefined variable name is referenced in __all__.</p>
+               <p>This rule was added in Pylint 0.26.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1515,8 +1562,8 @@
     <name><![CDATA[Invalid object in __all__, must contain only strings]]></name>
     <configKey>E0604</configKey>
     <description>
-      <![CDATA[Used when an invalid (non-string) object occurs in __all__. 
-       <p>This rule was added in Pylint 0.27.0.</p>]]>
+      <![CDATA[<p>Used when an invalid (non-string) object occurs in __all__.</p>
+               <p>This rule was added in Pylint 0.27.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1525,7 +1572,8 @@
     <name><![CDATA[Avoid catching an exception which doesn't inherit from BaseException]]></name>
     <configKey>E0712</configKey>
     <description>
-      <![CDATA[Used when a class which doesn't inherit from BaseException is used as an exception in an except clause.]]>
+      <![CDATA[<p>Used when a class which doesn't inherit from BaseException is used as an exception in an except clause.</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1534,7 +1582,9 @@
     <name><![CDATA[Missing argument to super()]]></name>
     <configKey>E1004</configKey>
     <description>
-      <![CDATA[Used when the super builtin didn't receive an argument. This message can't be emitted when using Python >= 3.0.]]>
+      <![CDATA[<p>Used when the super builtin didn't receive an argument.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1543,8 +1593,8 @@
     <name><![CDATA[Suspicious argument]]></name>
     <configKey>E1310</configKey>
     <description>
-      <![CDATA[The argument to a str.{l,r,}strip call contains a duplicate character,
-      <p>This rule was added in Pylint 0.28.0.</p>]]>
+      <![CDATA[<p>The argument to a str.{l,r,}strip call contains a duplicate character,</p>
+               <p>This rule was added in Pylint 0.28.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1553,9 +1603,9 @@
     <name><![CDATA[map/filter on lambda could be replaced by comprehension]]></name>
     <configKey>W0110</configKey>
     <description>
-      <![CDATA[Used when a lambda is the first argument to "map" or "filter". 
-        It could be clearer as a list comprehension or generator expression. This message can't be emitted when using Python >= 3.0.
-        <p>This rule was added in Pylint 0.27.0.</p>]]>
+      <![CDATA[<p>Used when a lambda is the first argument to "map" or "filter". It could be clearer as a list comprehension or generator expression.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule was added in Pylint 0.27.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1564,31 +1614,30 @@
     <name><![CDATA[Else clause on loop without a break statement]]></name>
     <configKey>W0120</configKey>
     <description>
-      <![CDATA[Loops should only have an else clause if they can exit early with a break statement, 
-        otherwise the statements under else should be on the same scope as the loop itself.
-        <p>This rule was added in Pylint 0.28.0.</p>]]>
+      <![CDATA[<p>Loops should only have an else clause if they can exit early with a break statement, otherwise the statements under else should be on the same scope as the loop itself.</p>
+               <p>This rule was added in Pylint 0.28.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
   <rule>
     <key>W0121</key>
-    <name><![CDATA[Use raise ErrorClass(args) instead of raise ErrorClass, args.]]></name>
+    <name><![CDATA[Use raise ErrorClass(args) instead of raise ErrorClass, args]]></name>
     <configKey>W0121</configKey>
     <description>
-      <![CDATA[Used when the alternate raise syntax 'raise foo, bar' is used instead of 'raise foo(bar)'. 
-        This message can't be emitted when using Python >= 3.0.
-        <p>This rule was added in Pylint 1.0.0.</p>]]>
+      <![CDATA[<p>Used when the alternate raise syntax 'raise foo, bar' is used instead of 'raise foo(bar)'.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule is deprecated. It was replaced with {rule:Pylint:E1604} in Pylint 1.4.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>W0123</key>
     <name><![CDATA[Use of eval]]></name>
     <configKey>W0123</configKey>
     <description>
-      <![CDATA[Used when you use the "eval" function, to discourage its usage. 
-        Consider using `ast.literal_eval` for safely evaluating strings containing Python expressionsfrom untrusted sources.
-        <p>This rule was added in Pylint 1.2.0.</p>]]>
+      <![CDATA[<p>Used when you use the "eval" function, to discourage its usage. Consider using `ast.literal_eval` for safely evaluating strings containing Python expressions from untrusted sources.</p>
+               <p>This rule was added in Pylint 1.2.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1597,8 +1646,8 @@
     <name><![CDATA[__iter__ returns non-iterator]]></name>
     <configKey>W0234</configKey>
     <description>
-      <![CDATA[Used when an __iter__ method returns something which is not an iterable (i.e. has no `next` method).
-        <p>This rule was added in Pylint 1.1.0.</p>]]>
+      <![CDATA[<p>Used when an __iter__ method returns something which is not an iterable (i.e. has no `next` method).</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1607,9 +1656,9 @@
     <name><![CDATA[Source line cannot be decoded using the specified source file encoding]]></name>
     <configKey>W0512</configKey>
     <description>
-      <![CDATA[Used when a source line cannot be decoded using the specified source file encoding. 
-        This message can't be emitted when using Python >= 3.0.
-        <p>This rule was added in Pylint 1.0.0.</p>]]>
+      <![CDATA[<p>Used when a source line cannot be decoded using the specified source file encoding.</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1618,7 +1667,8 @@
     <name><![CDATA[Redefining name in exception handler]]></name>
     <configKey>W0623</configKey>
     <description>
-      <![CDATA[Used when an exception handler assigns the exception to an existing name]]>
+      <![CDATA[<p>Used when an exception handler assigns the exception to an existing name.</p>
+               <p>This rule was added in Pylint 0.25.1.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1627,8 +1677,8 @@
     <name><![CDATA[Possible unbalanced tuple unpacking]]></name>
     <configKey>W0632</configKey>
     <description>
-      <![CDATA[Used when there is an unbalanced tuple unpacking in assignment. 
-        <p>This rule was added in Pylint 1.1.0.</p>]]>
+      <![CDATA[<p>Used when there is an unbalanced tuple unpacking in assignment.</p>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1637,8 +1687,8 @@
     <name><![CDATA[Attempting to unpack a non-sequence]]></name>
     <configKey>W0633</configKey>
     <description>
-      <![CDATA[Used when something which is not a sequence is used in an unpack assignment. 
-        <p>This rule was added in Pylint 1.1.0.</p>]]>
+      <![CDATA[<p>Used when something which is not a sequence is used in an unpack assignment.</p>
+               <p>This rule was added in Pylint 1.1.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1647,7 +1697,8 @@
     <name><![CDATA[Exception to catch is the result of a binary operation]]></name>
     <configKey>W0711</configKey>
     <description>
-      <![CDATA[Used when the exception to catch is of the form "except A or B:". If intending to catch multiple, rewrite as "except (A, B):"]]>
+      <![CDATA[<p>Used when the exception to catch is of the form "except A or B:". If intending to catch multiple, rewrite as "except (A, B):".</p>
+               <p>This rule was added in Pylint 0.26.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1656,20 +1707,21 @@
     <name><![CDATA[Implicit unpacking of exceptions is not supported in Python 3]]></name>
     <configKey>W0712</configKey>
     <description>
-      <![CDATA[Python3 will not allow implicit unpacking of exceptions in except clauses. 
-        See http://www.python.org/dev/peps/pep-3110/ This message can't be emitted whenusing Python >= 3.0.
-        <p>This rule was added in Pylint 1.0.0.</p>]]>
+      <![CDATA[<p>Python3 will not allow implicit unpacking of exceptions in except clauses.</p>
+               <p>See http://www.python.org/dev/peps/pep-3110/</p>
+               <p>This message can't be emitted when using Python >= 3.0.</p>
+               <p>This rule is deprecated. It was added in Pylint 1.0.0 and replaced with {rule:Pylint:E1603} in Pylint 1.4.0.</p>]]>
     </description>
     <priority>MINOR</priority>
+    <status>DEPRECATED</status>
   </rule>
   <rule>
     <key>W1401</key>
     <name><![CDATA[Anomalous backslash escape]]></name>
     <configKey>W1401</configKey>
     <description>
-      <![CDATA[Used when a backslash is in a literal string but not as an escape. 
-      <p>This rule was added in Pylint 0.26.0.</p>
-      <p>This rule is deprecated, use {rule:python:S1717} instead.</p>]]>
+      <![CDATA[<p>Used when a backslash is in a literal string but not as an escape.</p>
+               <p>This rule is deprecated, use {rule:python:S1717} instead.</p>]]>
     </description>
     <priority>MINOR</priority>
     <status>DEPRECATED</status>
@@ -1679,8 +1731,8 @@
     <name><![CDATA[Anomalous Unicode escape in byte string]]></name>
     <configKey>W1402</configKey>
     <description>
-      <![CDATA[Used when an escape like u is encountered in a byte string where it has no effect.
-      <p>This rule was added in Pylint 0.26.0.</p>]]>
+      <![CDATA[<p>Used when an escape like \u is encountered in a byte string where it has no effect.</p>
+               <p>This rule was added in Pylint 0.26.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
@@ -1689,9 +1741,9 @@
     <name><![CDATA[Invalid mode for open]]></name>
     <configKey>W1501</configKey>
     <description>
-      <![CDATA[Python supports: r, w, a modes with b, +, and U options. 
-        See http://docs.python.org/2/library/functions.html#open
-        <p>This rule was added in Pylint 1.0.0.</p>]]>
+      <![CDATA[<p>Python supports: r, w, a modes with b, +, and U options.</p>
+               <p>See http://docs.python.org/2/library/functions.html#open</p>
+               <p>This rule was added in Pylint 1.0.0.</p>]]>
     </description>
     <priority>MINOR</priority>
   </rule>
