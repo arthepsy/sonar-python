@@ -1,18 +1,1 @@
-### Documentation:
-- http://docs.codehaus.org/display/SONAR/Python+Plugin
-
-### Continuous Integration:
-| Hoster  | Build status |
-| ------------- | ------------- |
-| [CloudBees](https://sonarplugins.ci.cloudbees.com/job/python/)| ?? |
-| [Travis CI](https://travis-ci.org/wenns/sonar-python)  |  [![Build Status](https://travis-ci.org/wenns/sonar-python.svg?branch=master)](https://travis-ci.org/wenns/sonar-python) |
-
-
-### Issue Management:
-- https://jira.codehaus.org/browse/SONARPY
-
-### Continuous Inspection:
-- http://nemo.sonarqube.org/dashboard/index/org.codehaus.sonar-plugins.python:python
-
-### Sample Project:
-- https://github.com/wenns/sample_sonar_python
+This is [SonarQube Python Plugin](https://github.com/SonarCommunity/sonar-python) fork with [flake8](http://flake8.readthedocs.org/en/2.2.3/) support and updated [Pylint](http://www.pylint.org/) rules (1.4.0).
