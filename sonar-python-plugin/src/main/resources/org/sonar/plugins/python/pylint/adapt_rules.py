@@ -347,7 +347,6 @@ def get_fixed_text(text):
 	
 	replaces = {' , ': ', ',
 	            ' !': '!',
-	            '``': '`',
 	            'datetetime.': 'datetime.', 
 	            'unexistent': 'nonexistent',
 	            'occured': 'occurred',
@@ -360,6 +359,8 @@ def get_fixed_text(text):
 	             ' (function for Python 3),': ',',
 	             'function(Python': 'function (Python',
 	             '`(Python': '` (Python',
+	            '``from': '`from',
+	            'division``': 'division`',
 	            'PyLint': 'Pylint'}
 	for k, v in replaces.items():
 		text = text.replace(k, v)
