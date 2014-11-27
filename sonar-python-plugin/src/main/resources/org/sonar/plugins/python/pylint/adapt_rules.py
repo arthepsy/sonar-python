@@ -519,28 +519,11 @@ if __name__ == '__main__':
 	_out('<rules>')
 	for irule in irules[0]: 
 		output_rule(irule)
-	_out('')
-	_out('  <!-- removed in in pylint 0.22 -->')
-	_out('  <!-- E0503 (Unknown encoding specified) -->')
-	_out('')
-	_out('  <!-- removed in in pylint 0.23 -->')
-	_out('  <!-- E0501 (Non ascii characters found but no encoding specified (PEP 263)) -->')
-	_out('  <!-- E0502 Wrong encoding specified -->')
-	_out('  <!-- F0321 Format detection error in %r -->')
-	_out('')
-	_out('  <!-- new in pylint 0.24 -->')
 	for irule in irules[1]: 
 		output_rule(irule)
-	_out('  ')
-	_out('  <!-- Added between pylint 0.25 and 1.2.1 -->')
 	for irule in irules[2]: 
 		output_rule(irule)
-	_out('  ')
-	_out('  <!-- Added between pylint 1.2.1 and 1.4.0 -->')
 	for irule in irules[3]: 
 		output_rule(irule)
 	_out()
 	_out('</rules>')
-	_out()
-	_out('<!-- LocalWords:  Pylint PyLint')
-	_out('-->')

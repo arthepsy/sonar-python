@@ -1364,16 +1364,6 @@
     </description>
     <priority>MINOR</priority>
   </rule>
-
-  <!-- removed in in pylint 0.22 -->
-  <!-- E0503 (Unknown encoding specified) -->
-
-  <!-- removed in in pylint 0.23 -->
-  <!-- E0501 (Non ascii characters found but no encoding specified (PEP 263)) -->
-  <!-- E0502 Wrong encoding specified -->
-  <!-- F0321 Format detection error in %r -->
-
-  <!-- new in pylint 0.24 -->
   <rule>
     <key>E1200</key>
     <name><![CDATA[Unsupported logging format character]]></name>
@@ -1414,8 +1404,6 @@
     </description>
     <priority>MAJOR</priority>
   </rule>
-  
-  <!-- Added between pylint 0.25 and 1.2.1 -->
   <rule>
     <key>C0204</key>
     <name><![CDATA[Metaclass class method first argument]]></name>
@@ -1747,8 +1735,6 @@
     </description>
     <priority>MINOR</priority>
   </rule>
-  
-  <!-- Added between pylint 1.2.1 and 1.4.0 -->
   <rule>
     <key>C0327</key>
     <name><![CDATA[Mixed line endings LF and CRLF]]></name>
@@ -2403,6 +2389,3 @@
   </rule>
 
 </rules>
-
-<!-- LocalWords:  Pylint PyLint
--->
