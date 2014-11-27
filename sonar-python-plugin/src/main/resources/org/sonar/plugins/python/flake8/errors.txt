@@ -79,7 +79,7 @@ F822 undefined name name in __all__
 F823 local variable name ... referenced before assignment
 F831 duplicate argument name in function definition
 F841 local variable name is assigned to but never used
-C901 %r is too complex (%d)
+C901 function is too complex
 N801 class names should use CapWords convention
 N802 function name should be lowercase
 N803 argument name should be lowercase

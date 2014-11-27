@@ -650,10 +650,10 @@
   </rule>
   <rule>
       <key>C901</key>
-      <name><![CDATA[%r is too complex (%d)]]></name>
+      <name><![CDATA[function is too complex]]></name>
       <configKey>C901</configKey>
       <description>
-          <![CDATA[%r is too complex (%d)]]>
+          <![CDATA[function is too complex]]>
       </description>
   </rule>
   <rule>
